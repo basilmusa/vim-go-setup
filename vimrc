@@ -67,7 +67,8 @@ nmap K <Plug>(go-doc)
 
 " NERDTree
 nnoremap <leader>e :NERDTreeToggle<CR>
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p
+autocmd VimEnter * if argc() == 0 | NERDTree | wincmd p | endif
 
 " vim-airline
 let g:airline_powerline_fonts = 1
