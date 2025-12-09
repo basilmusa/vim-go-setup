@@ -34,6 +34,9 @@ set shiftwidth=4
 set expandtab                  " converts tab to spaces
 set smartindent                " auto-indenting
 
+" To keep colors during tmux sessions
+set t_Co=256
+
 " ---------- vim-go Configuration ----------
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
