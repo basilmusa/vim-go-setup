@@ -32,6 +32,9 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
+" Automatically insert closing braces {}, []
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 " ---------- Basic Editor Settings ----------
