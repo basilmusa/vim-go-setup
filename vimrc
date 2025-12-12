@@ -30,7 +30,7 @@ Plug 'tpope/vim-sleuth'
 
 " Git information in airline theme
 Plug 'tpope/vim-fugitive'
-
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
@@ -104,6 +104,10 @@ autocmd VimEnter * if argc() == 0 | NERDTree | wincmd p | endif
 " vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'dark'
+
+" Airline + Git plugins
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#hunks#enabled = 1
 
 " FZF
 nnoremap <C-p> :Files<CR>
