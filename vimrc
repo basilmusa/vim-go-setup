@@ -14,6 +14,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " File Tree Sidebar
 Plug 'preservim/nerdtree'
 
+" gruvbox colorscheme
+Plug 'morhetz/gruvbox'
+
 " Status bar (beautiful, informative UI)
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -21,6 +24,12 @@ Plug 'vim-airline/vim-airline-themes'
 " Fuzzy finder for files/buffers/symbols
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Respect indentation for the current file
+Plug 'tpope/vim-sleuth'
+
+" Git information in airline theme
+Plug 'tpope/vim-fugitive'
 
 
 call plug#end()
@@ -33,6 +42,14 @@ set tabstop=4                  " Go default
 set shiftwidth=4
 set expandtab                  " converts tab to spaces
 set smartindent                " auto-indenting
+set background=dark
+
+
+" Use gruvbox for colorscheme as default
+colorscheme gruvbox
+if exists(':AirlineTheme')
+  AirlineTheme gruvbox
+endif
 
 " To keep colors during tmux sessions
 set t_Co=256
