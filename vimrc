@@ -35,6 +35,9 @@ Plug 'airblade/vim-gitgutter'
 " Automatically insert closing braces {}, []
 Plug 'jiangmiao/auto-pairs'
 
+" Remove whitespaces from empty lines
+Plug 'ntpeters/vim-better-whitespace'
+
 call plug#end()
 
 " ---------- Basic Editor Settings ----------
@@ -68,16 +71,16 @@ autocmd BufWritePre *.go :silent! GoFmt
 " ---------- coc.nvim (Autocomplete) ----------
 let g:coc_global_extensions = ['coc-go']
 
+" ---------- vim-better-whitespace ------------
+" enabled on save
+let g:better_whitespace_enabled = 1
+let g:strip_whitespace_on_save = 1
+
 " Use Tab to cycle through suggestions
 inoremap <silent><expr> <Tab>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ "\<Tab>"
 inoremap <expr><S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
-
-" Use Enter to confirm completion
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-      \ : "\<CR>"
-
 
 " ---------- Keybindings ----------
 let mapleader=","                " press , + key
