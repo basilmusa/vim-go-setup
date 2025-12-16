@@ -1,0 +1,14 @@
+{
+  "tsserver.maxTsServerMemory": 4096
+
+  // Dont show Unkown for unknown types
+  "python.analysis.typeCheckingMode": "basic",
+  "diagnostic.virtualText": false,
+
+  "tsserver.log": "verbose",
+  "coc.preferences.extentions": [
+    "coc-tsserver",
+    "coc-go"
+  ]
+}
+
