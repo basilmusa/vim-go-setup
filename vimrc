@@ -35,9 +35,6 @@ Plug 'airblade/vim-gitgutter'
 " Automatically insert closing braces {}, []
 Plug 'jiangmiao/auto-pairs'
 
-" Remove whitespaces from empty lines
-Plug 'ntpeters/vim-better-whitespace'
-
 call plug#end()
 
 " ---------- Basic Editor Settings ----------
