@@ -1,0 +1,37 @@
+[user]
+	email = basabbas@amazon.com
+	name = Basel Abbas
+
+[color]
+	ui = auto
+
+[push]
+    default = simple
+
+[alias]
+    dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+
+[init]
+    defaultBranch = main
+
+[include]
+    path = ~/delta-catppuccin/catppuccin.gitconfig
+
+[core]
+    pager = delta
+
+[delta]
+    features = catppuccin-latte
+    line-numbers = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    conflictStyle = zdiff3
+
+# INCLUDES
+# --------
+# Local/Private config goes in the include
+[include]
+  path = ~/.gitconfig.local
