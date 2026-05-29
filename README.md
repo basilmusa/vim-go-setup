@@ -1,3 +1,14 @@
+# `.gitconfig` prerequisites
+
+- Install git-delta from: https://github.com/dandavison/delta
+- Git clone catpuccin theme: 
+
+```
+git clone https://github.com/catppuccin/delta.git ~/delta-catppuccin
+```
+
+- Finally copy `.gitconfig` contents from this repo to your `.gitconfig` file
+
 # Vim + Go Development Setup
 
 This guide explains how to set up Vim for Go development using `vim-go` and a few essential UI enhancements.
