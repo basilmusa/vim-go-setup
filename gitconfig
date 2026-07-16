@@ -1,6 +1,6 @@
 [user]
-	email = basabbas@amazon.com
-	name = Basel Abbas
+	email = 
+	name = 
 
 [color]
 	ui = auto
@@ -15,7 +15,7 @@
     defaultBranch = main
 
 [include]
-    path = ~/delta-catppuccin/catppuccin.gitconfig
+    path = ~/.config/delta/catppuccin/catppuccin.gitconfig
 
 [core]
     pager = delta

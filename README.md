@@ -1,13 +1,21 @@
 # `.gitconfig` prerequisites
 
 - Install git-delta from: https://github.com/dandavison/delta
+    - Download the amd64 deb file from the releases page:
+      Example: https://github.com/dandavison/delta/releases/download/0.19.2/git-delta_0.19.2_amd64.deb
+    - Install it using: sudo apt install ./git-deleta_0.19.2_amd64.deb
+    
+
 - Git clone catpuccin theme: 
 
 ```
-git clone https://github.com/catppuccin/delta.git ~/delta-catppuccin
+mkdir -p ~/.config/delta
+git clone https://github.com/catppuccin/delta.git ~/.config/delta/catppuccin
 ```
 
-- Finally copy `.gitconfig` contents from this repo to your `.gitconfig` file
+- Copy `.gitconfig` contents from this repo to your `.gitconfig` file
+- Edit `.gitconfig` and provide the name and email fields
+
 
 # Vim + Go Development Setup
 
