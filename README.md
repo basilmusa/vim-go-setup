@@ -90,13 +90,13 @@ TPM is used to install and manage tmux plugins.
 
 Install TPM
 ```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
 
 Verify installation
 
 ```
-ls ~/.tmux/plugins/tpm
+ls ~/.config/tmux/plugins/tpm
 ```
 
 You should see files like tpm, bindings, and scripts.
@@ -132,6 +132,12 @@ Configure your terminal
 
 Set your terminal to use the Nerd Font you installed
 (e.g. JetBrainsMono Nerd Font).
+
+4. Copy the file `tmux.conf` to `~/.config/tmux/tmux.conf`
+
+```
+cp ~/source_code/vim-go-setup/tmux.conf ~/.config/tmux/.
+```
 
 5. Restart tmux after setup
 
