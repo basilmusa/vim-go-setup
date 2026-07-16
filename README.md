@@ -33,6 +33,33 @@ Make sure you have:
 - **node.js** (Install it from https://nodejs.org/en/download/)
 
 ---
+## *. Install nvm, node, npm
+
+```bash
+# Install nvm
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+
+# Reload your shell (or close and reopen your terminal)
+source ~/.bashrc
+
+# Verify nvm is installed
+nvm --version
+
+# Install the latest LTS version of Node.js (includes npm)
+nvm install --lts
+
+# Use the LTS version
+nvm use --lts
+
+# Make the LTS version the default for new terminal sessions
+nvm alias default lts/*
+
+# Verify installation
+node -v
+npm -v
+```
+
+---
 
 ## 2. Install vim-plug (Plugin Manager)
 
